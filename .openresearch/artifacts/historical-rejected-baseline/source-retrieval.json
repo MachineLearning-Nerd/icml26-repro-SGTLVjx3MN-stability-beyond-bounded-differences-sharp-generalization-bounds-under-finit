@@ -1,0 +1,18 @@
+{
+  "paper_id": "2606.06855",
+  "primary_url": "https://ar5iv.labs.arxiv.org/html/2606.06855",
+  "retrieved_at_utc": "2026-07-24T15:36:25Z",
+  "user_agent": "OpenResearch-Reproduction/1.0 (paper 2606.06855; contact via repository)",
+  "sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7",
+  "anchors": {
+    "claim_1": "#S2.Thmtheorem2",
+    "claim_2": "#S2.Thmtheorem6",
+    "claim_3": "#S3.Thmtheorem1",
+    "claim_4": "#S3.Thmtheorem4",
+    "claim_5a": "#S3.Thmtheorem9",
+    "claim_5b": "#S3.Thmtheorem10",
+    "claim_6_assumption": "#S3.Thmtheorem12",
+    "claim_6_theorem": "#S3.Thmtheorem14"
+  }
+}
+
