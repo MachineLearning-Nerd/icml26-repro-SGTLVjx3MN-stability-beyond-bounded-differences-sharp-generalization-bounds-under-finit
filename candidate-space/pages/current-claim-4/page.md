@@ -38,10 +38,23 @@ also gives the required `|E(R-R_emp)|<=beta E H`, while exchangeability gives
 | Verdict | **VERIFIED** |
 
 The fixed command is `uv run --locked python -m reproduction.run_all`.
-Certificate:
-[`proof_certificate.json`](../../../.openresearch/artifacts/claim-4/proof_certificate.json).
-Primary verifier: [`claim4.py`](../../../reproduction/claim4.py).
-Independent checker: [`claim4_checker.py`](../../../reproduction/claim4_checker.py).
+Run `e1126a83-08d5-4584-943c-8bb028bea9ca` completed locally in
+approximately 10 orchestrated seconds at Git SHA
+`a8be89f5e9dd072e349c21bb435ff3fe965dd04f`.
+
+Evidence bundle:
+[`contract`](../../evidence/claim-4/claim_contract.json) ·
+[`source audit`](../../evidence/claim-4/source_audit.md) ·
+[`method`](../../evidence/claim-4/method.md) ·
+[`raw results`](../../evidence/claim-4/raw_results.json) ·
+[`proof certificate`](../../evidence/claim-4/proof_certificate.json) ·
+[`checker output`](../../evidence/claim-4/checker_output.txt) ·
+[`control output`](../../evidence/claim-4/negative_control_output.txt) ·
+[`limitations`](../../evidence/claim-4/limitations.md) ·
+[`EVAL`](../../evidence/claim-4/EVAL.md).
+Code:
+[`primary verifier`](../../reproduction/claim4.py) ·
+[`independent checker`](../../reproduction/claim4_checker.py).
 
 The finite diagnostic is not extrapolated into a universal conclusion; the
 universal conclusion comes from the symbolic reduction.

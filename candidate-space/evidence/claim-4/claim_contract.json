@@ -1,0 +1,13 @@
+{
+  "claim_id": 4,
+  "paper_object": "Theorem 3.4",
+  "exact_quantifiers": "For every integer m>=1, every iid sample S~D^m, every real p>=2 for which Assumptions 3.1 and 3.3 hold, and every y>0, both displayed high-probability bounds hold with constants depending only on p.",
+  "acceptance": [
+    "mechanically derive both replace-one envelopes and the stability-bias shifts",
+    "reduce both conclusions to Theorem 2.2 without selecting a formula-derived test scale",
+    "give explicit admissible c1,c2,c3,c4 depending only on p",
+    "independent checker exits zero on the certificate and complete declared finite diagnostic",
+    "controls fail when the population-risk increment or stability-bias shift is deleted"
+  ],
+  "verdict": "VERIFIED"
+}

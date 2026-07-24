@@ -36,8 +36,8 @@ and Gaussian variance are all zero, so the right side is zero.
 | Assumption 3.12(i)–(iii) | PASS pointwise |
 | Left probability | `1` |
 | Displayed right bound | `0` |
-| Independent reconstruction | Must exit 0 |
-| Whole-task replacement with `H=0` | Must FAIL |
+| Independent reconstruction | PASS: checks `8/8`, `8/8`, `16/16` |
+| Whole-task replacement with `H=0` | FAIL as intended: change `1>0` |
 | Genuine task-level envelope 1 | Corrected control PASS |
 | Verdict | **FALSIFIED** |
 
@@ -45,7 +45,20 @@ Equation (104) exposes the missing premise: it replaces an entire task
 `S_j` by `S'_j`, not the within-task neighbor from Assumption 3.12(i).
 
 The fixed command is `uv run --locked python -m reproduction.run_all`.
-Counterexample:
-[`counterexample_certificate.json`](../../../.openresearch/artifacts/claim-6/counterexample_certificate.json).
-Primary verifier: [`claim6.py`](../../../reproduction/claim6.py).
-Independent checker: [`claim6_checker.py`](../../../reproduction/claim6_checker.py).
+Run `11ff7b12-f2dd-4ef2-bdfd-ea3641701954` completed locally in
+approximately 10 orchestrated seconds at Git SHA
+`7012a238962fd3e18a1f2f67a4f78ebbf69fc7c1`.
+
+Evidence bundle:
+[`contract`](../../evidence/claim-6/claim_contract.json) ·
+[`source audit`](../../evidence/claim-6/source_audit.md) ·
+[`method`](../../evidence/claim-6/method.md) ·
+[`raw results`](../../evidence/claim-6/raw_results.json) ·
+[`counterexample`](../../evidence/claim-6/counterexample_certificate.json) ·
+[`checker output`](../../evidence/claim-6/checker_output.txt) ·
+[`control output`](../../evidence/claim-6/negative_control_output.txt) ·
+[`limitations`](../../evidence/claim-6/limitations.md) ·
+[`EVAL`](../../evidence/claim-6/EVAL.md).
+Code:
+[`primary verifier`](../../reproduction/claim6.py) ·
+[`independent checker`](../../reproduction/claim6_checker.py).

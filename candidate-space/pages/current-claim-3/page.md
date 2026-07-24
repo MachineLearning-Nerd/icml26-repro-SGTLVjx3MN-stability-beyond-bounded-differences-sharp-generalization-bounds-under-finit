@@ -29,21 +29,33 @@ Therefore `beta=1/m` and `H(z,z')=|z-z'|`. Since
 | Exact replace-one inequality | PASS |
 | `p=2` moment | `E H^2=2` |
 | Uniform-stability supremum | Infinite |
-| Independent checker | Must exit 0 |
+| Independent checker | PASS: 49 exact arithmetic cases |
 | Halved-beta control | Must FAIL: `1 > 1/2` |
 | Cauchy control | Must FAIL: no finite second moment |
 | Verdict | **VERIFIED** |
 
 Fixed command: `uv run --locked python -m reproduction.run_all`.
 The environment is Python 3.12 with the committed `uv.lock`; numerical thread
-pools are limited to one thread. Raw certificate:
-[`raw_results.json`](../../../.openresearch/artifacts/claim-3/raw_results.json).
-Primary verifier: [`claim3.py`](../../../reproduction/claim3.py). Independent
-checker: [`claim3_checker.py`](../../../reproduction/claim3_checker.py).
+pools are limited to one thread. Run
+`b2b1a8ee-273a-4152-8a68-e14a454fbcc7` completed locally in approximately
+10 orchestrated seconds at Git SHA
+`53ce47990a736bbaa7cd7d01989214beda9ce13a`.
+
+Evidence bundle:
+[`contract`](../../evidence/claim-3/claim_contract.json) ·
+[`source audit`](../../evidence/claim-3/source_audit.md) ·
+[`method`](../../evidence/claim-3/method.md) ·
+[`raw results`](../../evidence/claim-3/raw_results.json) ·
+[`checker output`](../../evidence/claim-3/checker_output.txt) ·
+[`control output`](../../evidence/claim-3/negative_control_output.txt) ·
+[`limitations`](../../evidence/claim-3/limitations.md) ·
+[`EVAL`](../../evidence/claim-3/EVAL.md).
+Code:
+[`primary verifier`](../../reproduction/claim3.py) ·
+[`independent checker`](../../reproduction/claim3_checker.py).
 
 ## Limitations
 
 This verifies Claim 3’s definition and strict-extension implication. It does
 not claim that this minimal witness is a useful predictor, and it does not
 verify Theorem 3.4.
-

@@ -29,16 +29,29 @@ exactly `c2`. With `A=4(p+2)/p`, all polynomial contributions satisfy
 | --- | --- |
 | Universal symbolic reconstruction | PASS |
 | Displayed constants | Recovered |
-| Independent finite-product checker | Must exit 0 |
-| Gaussian-only mutation | Must FAIL on one-large-jump control |
+| Independent finite-product checker | PASS: 106 functions, 1,854 thresholds |
+| Gaussian-only mutation | FAIL as intended: actual `1e-8`, mutated bound `0` |
 | Verdict | **VERIFIED** |
 
 The fixed command is `uv run --locked python -m reproduction.run_all`.
-Raw certificate:
-[`proof_certificate.json`](../../../.openresearch/artifacts/claim-1/proof_certificate.json).
-Primary verifier: [`claim1.py`](../../../reproduction/claim1.py).
-Independent checker: [`claim1_checker.py`](../../../reproduction/claim1_checker.py).
+Run `b1931020-333d-491b-9e08-2568893659a4` used local CPU, exposed 8
+logical CPUs with numerical pools fixed to one active core, and completed in
+approximately 10 orchestrated seconds at Git SHA
+`b1cd30ca708bc532460da6fc62af0e13d5bad8bf`.
+
+Evidence bundle:
+[`contract`](../../evidence/claim-1/claim_contract.json) ·
+[`source audit`](../../evidence/claim-1/source_audit.md) ·
+[`method`](../../evidence/claim-1/method.md) ·
+[`raw results`](../../evidence/claim-1/raw_results.json) ·
+[`proof certificate`](../../evidence/claim-1/proof_certificate.json) ·
+[`checker output`](../../evidence/claim-1/checker_output.txt) ·
+[`control output`](../../evidence/claim-1/negative_control_output.txt) ·
+[`limitations`](../../evidence/claim-1/limitations.md) ·
+[`EVAL`](../../evidence/claim-1/EVAL.md).
+Code:
+[`primary verifier`](../../reproduction/claim1.py) ·
+[`independent checker`](../../reproduction/claim1_checker.py).
 
 The exhaustive finite grids are diagnostics only. The full theorem is supported
 by the independent symbolic derivation, not extrapolated from enumeration.
-

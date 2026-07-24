@@ -1,0 +1,19 @@
+{
+  "candidate_logbook_valid": true,
+  "claims": {
+    "1": "VERIFIED",
+    "2": "BLOCKED",
+    "3": "VERIFIED",
+    "4": "VERIFIED",
+    "5": "FALSIFIED",
+    "6": "FALSIFIED"
+  },
+  "current_verifier_first_in_navigation": true,
+  "historical_paths_preserved": true,
+  "negative_controls": "PASS",
+  "post_fix_blind_review": "PASS",
+  "publication_status": "READY_FOR_CUMULATIVE_RUN",
+  "raw_data_regenerates_from_fixed_command": "PENDING_CUMULATIVE_RUN",
+  "secret_scan": "PASS",
+  "text_upload_allowlist": "PASS"
+}

@@ -1,0 +1,45 @@
+{
+  "source": {
+    "url": "https://ar5iv.labs.arxiv.org/html/2606.06855#S2.Thmtheorem2",
+    "retrieved_at_utc": "2026-07-24T15:36:25Z",
+    "sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7"
+  },
+  "theorem": {
+    "p_domain": "p>=2",
+    "z_domain": "z>0",
+    "inputs": "independent X_1,...,X_n; measurable f; pointwise replace-one envelopes H_i(X_i,X_i') with finite p moments",
+    "conclusion": "P(|f-Ef|>z) <= c1*sum_i E|H_i|^p/z^p + 2*exp(-c2*z^2/sum_i E|H_i|^2)"
+  },
+  "constants": {
+    "c1": "4*(4*(p+2)/p)^p",
+    "c2": "1/(2*(p+2)^2*e^p)"
+  },
+  "derivation": [
+    {
+      "rule": "doob_projection_identity",
+      "result": "f-Ef=sum_i D_i, D_i=E[f-f^(i)|F_i]"
+    },
+    {
+      "rule": "conditional_jensen_envelope",
+      "result": "E[|D_i|^q|F_(i-1)]<=E|H_i|^q for q in {2,p}"
+    },
+    {
+      "rule": "truncate_and_center",
+      "result": "D_i 1{|D_i|<=y}=U_i+mu_i; |U_i|<=2y; sum|mu_i|<=y^(1-p) M_p"
+    },
+    {
+      "rule": "bounded_increment_mgf",
+      "result": "apply reconstructed Lemma B.1 conditionally to U_i"
+    },
+    {
+      "rule": "chernoff_two_case_optimization",
+      "result": "I3 bounded by Gaussian optimizer or large-jump optimizer; their maximum is bounded by their sum"
+    },
+    {
+      "rule": "choose_alpha_gamma_and_threshold",
+      "result": "alpha=2/(p+2), gamma=p/(p+2), y=gamma*z/4 recover c1 and c2"
+    }
+  ],
+  "non_circularity": "No sample size, threshold, or tolerance is selected from the claimed bound. The primary evidence is a universal symbolic derivation.",
+  "verdict": "VERIFIED"
+}

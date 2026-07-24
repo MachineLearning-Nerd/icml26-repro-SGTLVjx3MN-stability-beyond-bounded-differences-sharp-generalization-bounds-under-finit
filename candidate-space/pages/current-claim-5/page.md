@@ -54,7 +54,20 @@ diagnostic over 1,088 functions and 5,688 tail thresholds with zero
 violations. It is not contradicted by this example.
 
 The fixed command is `uv run --locked python -m reproduction.run_all`.
-Counterexample:
-[`counterexample_certificate.json`](../../../.openresearch/artifacts/claim-5/counterexample_certificate.json).
-Primary verifier: [`claim5.py`](../../../reproduction/claim5.py).
-Independent checker: [`claim5_checker.py`](../../../reproduction/claim5_checker.py).
+Run `7c209bd3-e2e3-4242-bf78-66647277d855` completed locally in
+approximately 10 orchestrated seconds at Git SHA
+`95b65f4c47b378582b9346c6575f252fbb64e1cc`.
+
+Evidence bundle:
+[`contract`](../../evidence/claim-5/claim_contract.json) ·
+[`source audit`](../../evidence/claim-5/source_audit.md) ·
+[`method`](../../evidence/claim-5/method.md) ·
+[`raw results`](../../evidence/claim-5/raw_results.json) ·
+[`counterexample`](../../evidence/claim-5/counterexample_certificate.json) ·
+[`checker output`](../../evidence/claim-5/checker_output.txt) ·
+[`control output`](../../evidence/claim-5/negative_control_output.txt) ·
+[`limitations`](../../evidence/claim-5/limitations.md) ·
+[`EVAL`](../../evidence/claim-5/EVAL.md).
+Code:
+[`primary verifier`](../../reproduction/claim5.py) ·
+[`independent checker`](../../reproduction/claim5_checker.py).

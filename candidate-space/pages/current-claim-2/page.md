@@ -15,10 +15,10 @@ Source SHA-256:
 
 | Route | Method | Outcome |
 | --- | --- | --- |
-| 1 | Line-by-line displayed-proof audit | Equation (61) unresolved |
-| 2 | Complete declared finite grids | Corroboration only |
+| 1 | Line-by-line displayed-proof audit | Equation (61) is false; theorem unresolved |
+| 2 | Complete declared finite grids | 106 functions, 81,024 comparisons, 0 violations |
 | 3 | Von Bahr–Esseen fallback derivation | Weaker polynomial bound only |
-| 4 | Dedicated assumption-satisfying falsification search | No contradiction unless printed otherwise |
+| 4 | Dedicated assumption-satisfying falsification search | 20,000 cases, 0 counterexamples |
 
 For route 1, `X~Bernoulli(3/5)`, `f(X)=X`, and the minimal valid
 `H(X,X')=|X-X'|` give, at `y=3/10`,
@@ -27,8 +27,24 @@ valid as stated. The theorem's second term may still cover the example, so this
 is not a theorem counterexample.
 
 The fixed command is `uv run --locked python -m reproduction.run_all`.
-Contract: [`claim_contract.json`](../../../.openresearch/artifacts/claim-2/claim_contract.json).
-Search code: [`claim2_search.py`](../../../reproduction/claim2_search.py).
+Run `6c03caa7-60b1-4f58-a784-6e38aafc3fa9` used Hugging Face
+`cpu-upgrade`; 64 logical CPUs were visible but numerical pools were fixed to
+one active core. Runtime was 26 seconds at Git SHA
+`beaea6c9adf737c0df8045fd271b73e4fea1dfe0`. Route 4 used deterministic
+seed `260606855`. Its closest bound/tail ratio was `1.9578038271661302`.
+
+Evidence bundle:
+[`contract`](../../evidence/claim-2/claim_contract.json) ·
+[`source audit`](../../evidence/claim-2/source_audit.md) ·
+[`method and four routes`](../../evidence/claim-2/method.md) ·
+[`raw results`](../../evidence/claim-2/raw_results.json) ·
+[`checker output`](../../evidence/claim-2/checker_output.txt) ·
+[`control output`](../../evidence/claim-2/negative_control_output.txt) ·
+[`limitations`](../../evidence/claim-2/limitations.md) ·
+[`EVAL`](../../evidence/claim-2/EVAL.md).
+Code:
+[`primary verifier`](../../reproduction/claim2.py) ·
+[`independent search`](../../reproduction/claim2_search.py).
 
 ## Verdict
 
@@ -36,4 +52,3 @@ Search code: [`claim2_search.py`](../../../reproduction/claim2_search.py).
 nor a valid assumption-satisfying counterexample. The historical Monte Carlo
 page remains reachable as **Historical rejected baseline**, but is not current
 verification.
-
