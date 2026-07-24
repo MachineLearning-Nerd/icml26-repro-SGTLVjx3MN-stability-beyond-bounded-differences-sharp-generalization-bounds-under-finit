@@ -1,0 +1,13 @@
+{
+  "claim_id": 6,
+  "paper_objects": ["Assumption 3.12", "Theorem 3.14"],
+  "exact_quantifiers": "For every meta-distribution mu, every dimensions m,n, every meta-algorithm satisfying all three clauses of Assumption 3.12 with common finite p moments, and every y>0, the displayed one-sided bound holds.",
+  "acceptance": [
+    "distinguish the stated within-task neighbor from the proof's whole-task neighbor",
+    "a counterexample must satisfy all three stability clauses and every moment premise",
+    "enumerate the complete finite meta-training and population task domains",
+    "independent checker exits zero",
+    "a genuine whole-task stability control must cover the change that H=0 misses"
+  ],
+  "verdict": "FALSIFIED"
+}

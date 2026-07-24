@@ -1,0 +1,17 @@
+{
+  "claim": 6,
+  "verdict": "FALSIFIED",
+  "confidence": "HIGH",
+  "falsified_object": "Theorem 3.14",
+  "complete_meta_training_states": 2,
+  "complete_population_task_states": 2,
+  "gaps": ["1/2", "1/2"],
+  "threshold_y": "1/4",
+  "left_probability": 1,
+  "right_bound": 0,
+  "fixed_command": "uv run --locked python -m reproduction.run_all",
+  "seed_policy": "No stochastic evidence; complete exact enumeration.",
+  "planned_cpu_cores": 1,
+  "planned_backend": "local",
+  "planned_runtime": "under 5 minutes"
+}

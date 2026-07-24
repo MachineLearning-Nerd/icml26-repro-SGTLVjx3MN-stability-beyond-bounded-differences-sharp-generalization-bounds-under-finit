@@ -37,7 +37,7 @@ The right side is therefore zero. The exact claimed inequality becomes
 | Assumption 3.8 | PASS pointwise |
 | Left probability | `1/2` |
 | Displayed right bound | `0` |
-| Independent reconstruction | Must exit 0 |
+| Independent reconstruction | PASS: 2/2 partitions |
 | Replace difference by `1/u+1/m` | Corrected control PASS |
 | Verdict | **FALSIFIED** |
 
@@ -50,7 +50,8 @@ train changes their difference with coefficient `1/u+1/m`, not
 [Theorem 3.9](https://ar5iv.labs.arxiv.org/html/2606.06855#S3.Thmtheorem9)
 is separately supported by a finite-population Doob coupling, exact
 midpoint/telescoping coefficient bounds, and a complete declared finite-grid
-diagnostic. It is not contradicted by this example.
+diagnostic over 1,088 functions and 5,688 tail thresholds with zero
+violations. It is not contradicted by this example.
 
 The fixed command is `uv run --locked python -m reproduction.run_all`.
 Counterexample:

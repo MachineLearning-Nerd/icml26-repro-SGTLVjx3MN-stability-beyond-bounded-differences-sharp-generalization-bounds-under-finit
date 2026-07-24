@@ -1,0 +1,3 @@
+The stated within-task neighbor has H=0. A whole-task replacement can change
+squared loss by 1, so H=0 must fail; a corrected task-level envelope 1 must
+pass.
