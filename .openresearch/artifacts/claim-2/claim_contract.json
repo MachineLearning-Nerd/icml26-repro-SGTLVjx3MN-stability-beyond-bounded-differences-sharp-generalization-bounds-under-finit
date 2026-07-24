@@ -1,0 +1,17 @@
+{
+  "claim_id": 2,
+  "source": {
+    "url": "https://ar5iv.labs.arxiv.org/html/2606.06855#S2.Thmtheorem6",
+    "sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7"
+  },
+  "quantifiers": {
+    "inputs": "all independent X_1,...,X_n, all measurable f, all valid pointwise H_i",
+    "p": "1<p<2",
+    "Q": "Q>=1",
+    "z": "z>0"
+  },
+  "exact_bound": "sum_i P(|H_i|>z/(4Q)) + 2*(e*4^p*Q^(p-1)*sum_i E|H_i|^p/z^p)^Q",
+  "routes_required": 4,
+  "acceptance": "VERIFIED only with an exact universal derivation; FALSIFIED only with an assumption-satisfying theorem counterexample; otherwise BLOCKED"
+}
+

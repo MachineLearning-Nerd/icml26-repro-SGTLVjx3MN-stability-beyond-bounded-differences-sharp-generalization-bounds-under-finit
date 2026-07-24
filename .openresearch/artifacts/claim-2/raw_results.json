@@ -1,0 +1,8 @@
+{
+  "route_1": "equation (61) proof-step counterexample: projection tail 1, envelope tail 12/25",
+  "route_2": "authoritative exhaustive counts printed by fixed run",
+  "route_3": "weaker universal polynomial bound only",
+  "route_4": "authoritative deterministic falsification-search result printed by fixed run",
+  "verdict": "BLOCKED"
+}
+

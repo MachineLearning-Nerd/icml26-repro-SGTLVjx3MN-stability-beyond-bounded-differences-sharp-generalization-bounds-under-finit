@@ -29,6 +29,7 @@ import numpy as np
 
 from reproduction.claim3 import verify as verify_claim3
 from reproduction.claim1 import verify as verify_claim1
+from reproduction.claim2 import verify as verify_claim2
 
 
 SEEDS = (42, 7, 11, 13, 17, 19)
@@ -183,6 +184,10 @@ if __name__ == "__main__":
     claim1_result = verify_claim1()
     print(json.dumps(claim1_result, indent=2, sort_keys=True))
     print("CLAIM_1_STATUS=VERIFIED")
+    print("=== CURRENT CLAIM 2 FOUR-ROUTE AUDIT ===")
+    claim2_result = verify_claim2()
+    print(json.dumps(claim2_result, indent=2, sort_keys=True))
+    print("CLAIM_2_STATUS=BLOCKED")
     print("=== CURRENT CLAIM 3 CERTIFICATE ===")
     claim3_result = verify_claim3()
     print(json.dumps(claim3_result, indent=2, sort_keys=True))

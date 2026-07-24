@@ -1,0 +1,3 @@
+Equation (61) control must FAIL: 1 is not <= 12/25.
+This rejects a proof step; it is not a counterexample to the full theorem.
+
