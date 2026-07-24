@@ -1,0 +1,57 @@
+{
+  "source": {
+    "url": "https://ar5iv.labs.arxiv.org/html/2606.06855#S3.Thmtheorem4",
+    "retrieved_at_utc": "2026-07-24T15:36:25Z",
+    "sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7"
+  },
+  "quantifiers": {
+    "m": "integer m>=1",
+    "p": "real p>=2",
+    "y": "real y>0",
+    "samples": "every iid S~D^m satisfying Assumptions 3.1 and 3.3"
+  },
+  "assumptions": [
+    "Assumption 3.1",
+    "Assumption 3.3"
+  ],
+  "theorem": {
+    "first_target": "population risk minus empirical risk",
+    "second_target": "population risk minus leave-one-out risk",
+    "first_shift": "beta E H",
+    "second_shift": "R_m-R_(m-1)"
+  },
+  "derivation": [
+    {
+      "rule": "population_risk_increment",
+      "result": "|R(S)-R(S^i)| <= beta H_i"
+    },
+    {
+      "rule": "empirical_risk_increment",
+      "result": "|R_emp(S)-R_emp(S^i)| <= beta H_i + beta' G_i/m"
+    },
+    {
+      "rule": "leave_one_out_increment",
+      "result": "|R_loo(S)-R_loo(S^i)| <= (m-1) beta H_i/m + beta' G_i/m"
+    },
+    {
+      "rule": "stability_bias",
+      "result": "|E(R-R_emp)| <= beta EH and E(R-R_loo)=R_m-R_(m-1)"
+    },
+    {
+      "rule": "center_and_apply_theorem_2_2",
+      "result": "both centered targets have envelope at most 2 beta H_i + beta' G_i/m"
+    },
+    {
+      "rule": "moment_decoupling",
+      "result": "sum E|2 beta H_i + beta'G_i/m|^q <= 2^(2q-1)m beta^q EH^q + 2^(q-1)(beta')^q EG^q/m^(q-1), q in {2,p}"
+    }
+  ],
+  "derived_constants": {
+    "C1": "4*(4*(p+2)/p)^p",
+    "C2": "1/(2*(p+2)^2*e^p)",
+    "c1_equals_c3": "C1(p)*2^(2p-1)",
+    "c2_equals_c4": "C2(p)/8"
+  },
+  "non_circularity": "The primary evidence is a universal symbolic implication. No sample size, y, tolerance, or model family is selected from the claimed bound.",
+  "verdict": "VERIFIED"
+}

@@ -1,0 +1,16 @@
+{
+  "claim": 4,
+  "verdict": "VERIFIED",
+  "confidence": "HIGH",
+  "primary_result": "Both exact displayed conclusions reduce to Theorem 2.2 with c1=c3=C1(p)*2^(2p-1) and c2=c4=C2(p)/8.",
+  "checker": "The run must exit zero and print its complete finite-domain counts.",
+  "controls": [
+    "omitting the population-risk increment must fail",
+    "deleting the beta E H shift must fail"
+  ],
+  "fixed_command": "uv run --locked python -m reproduction.run_all",
+  "seed_policy": "No stochastic evidence; exact enumeration only.",
+  "planned_cpu_cores": 1,
+  "planned_backend": "local",
+  "planned_runtime": "under 5 minutes"
+}
