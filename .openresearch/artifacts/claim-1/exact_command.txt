@@ -1,0 +1,2 @@
+uv run --locked python -m reproduction.run_all
+

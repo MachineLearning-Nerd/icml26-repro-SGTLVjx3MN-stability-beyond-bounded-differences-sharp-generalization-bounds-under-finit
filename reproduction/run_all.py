@@ -28,6 +28,7 @@ for variable in (
 import numpy as np
 
 from reproduction.claim3 import verify as verify_claim3
+from reproduction.claim1 import verify as verify_claim1
 
 
 SEEDS = (42, 7, 11, 13, 17, 19)
@@ -178,6 +179,10 @@ if __name__ == "__main__":
     print("=== HISTORICAL REJECTED BASELINE ===")
     print(json.dumps(result, indent=2, sort_keys=True))
     print("BASELINE_STATUS=TOY_ONLY")
+    print("=== CURRENT CLAIM 1 CERTIFICATE ===")
+    claim1_result = verify_claim1()
+    print(json.dumps(claim1_result, indent=2, sort_keys=True))
+    print("CLAIM_1_STATUS=VERIFIED")
     print("=== CURRENT CLAIM 3 CERTIFICATE ===")
     claim3_result = verify_claim3()
     print(json.dumps(claim3_result, indent=2, sort_keys=True))
