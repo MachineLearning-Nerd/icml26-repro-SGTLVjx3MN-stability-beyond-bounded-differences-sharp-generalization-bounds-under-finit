@@ -32,9 +32,9 @@ also gives the required `|E(R-R_emp)|<=beta E H`, while exchangeability gives
 | --- | --- |
 | Universal six-step symbolic reduction | PASS |
 | Explicit constants depend only on `p` | PASS |
-| Independent complete declared binary diagnostic | Executed by fixed command |
-| Omit population-risk increment | Must FAIL |
-| Delete stability-bias shift | Must FAIL |
+| Independent complete declared binary diagnostic | PASS: 72 cases, 465 tail thresholds |
+| Omit population-risk increment | FAIL as intended: `2<=1` is false |
+| Delete stability-bias shift | FAIL as intended: exact bias is `1/2` |
 | Verdict | **VERIFIED** |
 
 The fixed command is `uv run --locked python -m reproduction.run_all`.

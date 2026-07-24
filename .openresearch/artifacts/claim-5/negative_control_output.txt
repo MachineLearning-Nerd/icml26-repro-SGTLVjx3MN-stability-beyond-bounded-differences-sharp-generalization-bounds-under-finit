@@ -1,0 +1,2 @@
+The fixed run checks an actual gap increment of 2. The paper coefficient gives
+an envelope of 0 and must fail; replacing it by 1/u+1/m gives 2 and must pass.

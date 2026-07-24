@@ -31,6 +31,7 @@ from reproduction.claim3 import verify as verify_claim3
 from reproduction.claim1 import verify as verify_claim1
 from reproduction.claim2 import verify as verify_claim2
 from reproduction.claim4 import verify as verify_claim4
+from reproduction.claim5 import verify as verify_claim5
 
 
 SEEDS = (42, 7, 11, 13, 17, 19)
@@ -197,3 +198,7 @@ if __name__ == "__main__":
     claim4_result = verify_claim4()
     print(json.dumps(claim4_result, indent=2, sort_keys=True))
     print("CLAIM_4_STATUS=VERIFIED")
+    print("=== CURRENT CLAIM 5 CERTIFICATE ===")
+    claim5_result = verify_claim5()
+    print(json.dumps(claim5_result, indent=2, sort_keys=True))
+    print("CLAIM_5_STATUS=FALSIFIED")
