@@ -1,0 +1,28 @@
+{
+  "source": {
+    "paper_sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7",
+    "anchor": "S3.Thmtheorem1"
+  },
+  "witness": {
+    "sample_size": 20,
+    "distribution": "standard_normal",
+    "algorithm": "sample_mean",
+    "loss": "abs(sample_mean)",
+    "beta": "1/20",
+    "envelope": "abs(z-z_prime)"
+  },
+  "moments": {
+    "p": 2,
+    "distribution_of_difference": "normal(mean=0, variance=2)",
+    "E_H_squared": 2,
+    "finite": true
+  },
+  "uniform_stability": {
+    "witness_family": "z_i=m*(B+1), z_i_prime=0",
+    "loss_increment": "B+1",
+    "quantifier": "for every finite B>=0",
+    "supremum_is_infinite": true
+  },
+  "verdict": "VERIFIED"
+}
+

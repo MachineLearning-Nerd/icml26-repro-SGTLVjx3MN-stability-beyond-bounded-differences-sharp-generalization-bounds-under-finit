@@ -1,0 +1,24 @@
+{
+  "claim_id": 3,
+  "paper_object": "Assumption 3.1 and Remark 3.2",
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2606.06855#S3.Thmtheorem1",
+  "paper_sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7",
+  "contract": {
+    "exact_statement_tested": "There exists a learning problem whose replace-one loss increment is bounded by beta H(z_i,z_i') with finite Lp moment for some p>=2, while no finite deterministic uniform-stability bound exists.",
+    "domain": "m>=1 real-valued training samples, Z_i iid standard normal",
+    "algorithm": "A_S = sample mean",
+    "loss": "ell(A_S,z)=abs(A_S)",
+    "beta": "1/m",
+    "envelope": "H(z,z')=abs(z-z')",
+    "p": 2,
+    "acceptance": [
+      "derive the replace-one inequality for arbitrary real samples",
+      "certify E[H^2]=2",
+      "exhibit a quantified family defeating every finite uniform bound",
+      "independent checker exits 0",
+      "halved-beta and Cauchy controls are rejected"
+    ]
+  },
+  "non_circularity": "The witness and p=2 moment are selected independently of any numerical tolerance or theorem bound."
+}
+

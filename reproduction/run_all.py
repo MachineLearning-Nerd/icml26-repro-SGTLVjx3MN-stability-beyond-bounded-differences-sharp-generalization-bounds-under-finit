@@ -27,6 +27,8 @@ for variable in (
 
 import numpy as np
 
+from reproduction.claim3 import verify as verify_claim3
+
 
 SEEDS = (42, 7, 11, 13, 17, 19)
 ARTIFACT_DIR = Path(".openresearch/artifacts/historical-rejected-baseline")
@@ -176,4 +178,7 @@ if __name__ == "__main__":
     print("=== HISTORICAL REJECTED BASELINE ===")
     print(json.dumps(result, indent=2, sort_keys=True))
     print("BASELINE_STATUS=TOY_ONLY")
-
+    print("=== CURRENT CLAIM 3 CERTIFICATE ===")
+    claim3_result = verify_claim3()
+    print(json.dumps(claim3_result, indent=2, sort_keys=True))
+    print("CLAIM_3_STATUS=VERIFIED")

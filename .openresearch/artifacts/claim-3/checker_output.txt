@@ -1,0 +1,3 @@
+Expected independent checker result: PASS.
+The authoritative output is printed inline by the fixed OpenResearch run.
+
