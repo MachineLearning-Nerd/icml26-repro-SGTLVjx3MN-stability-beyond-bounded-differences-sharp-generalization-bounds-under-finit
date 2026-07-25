@@ -1,0 +1,9 @@
+Run 7c209bd3-e2e3-4242-bf78-66647277d855:
+status=PASS
+theorem_3_10=COUNTEREXAMPLE_CONFIRMED
+partitions_exhausted=2
+stability_checks=4
+bounded_class_checks=4
+theorem_3_9_functions=1088
+theorem_3_9_tail_thresholds=5688
+theorem_3_9_violations=0

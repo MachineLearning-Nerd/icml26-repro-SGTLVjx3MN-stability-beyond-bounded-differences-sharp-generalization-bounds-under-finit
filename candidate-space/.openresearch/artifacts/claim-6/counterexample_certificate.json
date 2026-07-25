@@ -1,0 +1,43 @@
+{
+  "source": {
+    "anchor": "https://ar5iv.labs.arxiv.org/html/2606.06855#S3.Thmtheorem14",
+    "assumption_anchor": "https://ar5iv.labs.arxiv.org/html/2606.06855#S3.Thmtheorem12",
+    "retrieved_at_utc": "2026-07-24T15:36:25Z",
+    "sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7"
+  },
+  "theorem_3_14": {
+    "quantifier": "all y>0",
+    "event": "R(A(S),S)-R(A(S),mu) >= y+E[beta H+beta' G]",
+    "right_side": "displayed polynomial term plus displayed Gaussian term"
+  },
+  "counterexample": {
+    "mu": "uniform over D0=delta_0 and D1=delta_1",
+    "m": 1,
+    "n": 2,
+    "p": 3,
+    "meta_sample_under_Dtheta": "[theta,theta]",
+    "meta_algorithm": "return a task learner that ignores its task and predicts 1-theta_meta",
+    "loss": "squared loss",
+    "H": 0,
+    "G": 0,
+    "M": 0,
+    "assumption_i": "an iid replacement from point-mass Dtheta equals the original observation",
+    "assumption_ii": "the returned task learner ignores its task sample",
+    "assumption_iii": "two iid test observations from point-mass Dtheta are equal",
+    "empirical_meta_risk": 1,
+    "population_meta_risk": "1/2",
+    "gap": "1/2 for both theta_meta states",
+    "y": "1/4",
+    "left_probability": 1,
+    "bias_shift": 0,
+    "moment_numerator": 0,
+    "variance_denominator": 0,
+    "right_bound": 0
+  },
+  "proof_mismatch": {
+    "stated_neighbor": "S^(j,i) changes one observation inside task j with D_j fixed",
+    "equation_104_neighbor": "S^(j) replaces the entire task S_j by an iid task S'_j",
+    "unjustified_step": "equation (104) bounds the whole-task change by one H"
+  },
+  "contradiction": "1 > 0"
+}

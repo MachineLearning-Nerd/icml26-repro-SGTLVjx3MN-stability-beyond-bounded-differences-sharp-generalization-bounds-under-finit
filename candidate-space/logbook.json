@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "title": "Stability beyond Bounded Differences — exact reproduction",
+  "emoji": "🔬",
+  "space_id": "DineshAI/SGTLVjx3MN",
+  "paper": "arXiv:2606.06855",
+  "tags": [
+    "icml2026-repro",
+    "paper-SGTLVjx3MN"
+  ],
+  "updated_at": "2026-07-24T16:27:18Z",
+  "root": {
+    "slug": "index",
+    "title": "Current exact reproduction",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "current-claim-1",
+        "title": "Current Claim 1 — VERIFIED",
+        "file": "pages/current-claim-1/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-2",
+        "title": "Current Claim 2 — BLOCKED",
+        "file": "pages/current-claim-2/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-3",
+        "title": "Current Claim 3 — VERIFIED",
+        "file": "pages/current-claim-3/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-4",
+        "title": "Current Claim 4 — VERIFIED",
+        "file": "pages/current-claim-4/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-5",
+        "title": "Current Claim 5 — FALSIFIED",
+        "file": "pages/current-claim-5/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-claim-6",
+        "title": "Current Claim 6 — FALSIFIED",
+        "file": "pages/current-claim-6/page.md",
+        "children": []
+      },
+      {
+        "slug": "release-report",
+        "title": "Release report and forecast",
+        "file": "pages/release-report/page.md",
+        "children": []
+      },
+      {
+        "slug": "methods-current",
+        "title": "Current methods",
+        "file": "pages/methods-current/page.md",
+        "children": []
+      },
+      {
+        "slug": "red-team",
+        "title": "Evaluator-blind review",
+        "file": "pages/red-team/page.md",
+        "children": []
+      },
+      {
+        "slug": "historical-rejected-baseline",
+        "title": "Historical rejected baseline",
+        "file": "pages/historical-rejected-baseline/page.md",
+        "children": [
+          {
+            "slug": "overview",
+            "title": "Historical rejected baseline — Overview",
+            "file": "pages/overview/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-1-lp-concentration",
+            "title": "Historical rejected baseline — Claim 1 proxy",
+            "file": "pages/claim-1-lp-concentration/page.md",
+            "children": []
+          },
+          {
+            "slug": "claim-4-5-6",
+            "title": "Historical rejected baseline — Claims 4/5/6 proxies",
+            "file": "pages/claim-4-5-6/page.md",
+            "children": []
+          },
+          {
+            "slug": "methods",
+            "title": "Historical rejected baseline — Methods",
+            "file": "pages/methods/page.md",
+            "children": []
+          },
+          {
+            "slug": "conclusion",
+            "title": "Historical rejected baseline — Conclusion",
+            "file": "pages/conclusion/page.md",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "agent_view_tokens": 8000,
+  "revision": "release-candidate"
+}

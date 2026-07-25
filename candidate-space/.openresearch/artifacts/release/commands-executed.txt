@@ -1,0 +1,61 @@
+Research and release commands (material, reproducibility-bearing commands)
+
+orx skill
+orx skill orx-experiment-tree
+orx skill orx-evidence
+orx skill orx-git
+orx skill orx-compute
+orx projects --json
+orx runs 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c
+git branch -a
+git status --short
+git rev-parse HEAD
+curl -L -A 'OpenResearch-Reproduction/1.0 (paper audit; contact: local-user)' https://ar5iv.labs.arxiv.org/html/2606.06855
+sha256sum paper-ar5iv.html
+hf download DineshAI/SGTLVjx3MN --repo-type space --revision 05fc578dd7ceabe63f2650b21e8f318878f6b1ad
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Historical rejected baseline"
+orx exp run 55701dc5-90a3-4b88-a1a3-336dd0a610ed --backend local
+orx exp wait 55701dc5-90a3-4b88-a1a3-336dd0a610ed --timeout 480
+orx logs 2817be4a-9ed6-4be2-9def-3a707745635b
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Claim 3 strict-extension certificate" --parent 55701dc5-90a3-4b88-a1a3-336dd0a610ed
+orx exp run cbe61915-d7e7-4f64-b44e-cdb83f628ef5 --backend local
+orx exp wait cbe61915-d7e7-4f64-b44e-cdb83f628ef5 --timeout 480
+orx logs b2b1a8ee-273a-4152-8a68-e14a454fbcc7
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Claim 1 exact Nagaev derivation" --parent cbe61915-d7e7-4f64-b44e-cdb83f628ef5
+orx exp run 7058cf5c-0570-4c8e-8e65-0eacccc926e6 --backend local
+orx exp wait 7058cf5c-0570-4c8e-8e65-0eacccc926e6 --timeout 480
+orx logs b1931020-333d-491b-9e08-2568893659a4
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Claim 2 four-route audit" --parent 7058cf5c-0570-4c8e-8e65-0eacccc926e6
+orx exp run ff4ee80a-28ae-4ecf-98e2-898a2c167299 --backend hf --flavor cpu-upgrade --image ghcr.io/astral-sh/uv:python3.12-bookworm
+orx exp wait ff4ee80a-28ae-4ecf-98e2-898a2c167299 --timeout 480
+orx logs 6c03caa7-60b1-4f58-a784-6e38aafc3fa9
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Claim 4 exact generalization certificate" --parent ff4ee80a-28ae-4ecf-98e2-898a2c167299
+orx exp run 4b7473e7-625c-4b5f-a920-c7556cc15aaa --backend local
+orx exp wait 4b7473e7-625c-4b5f-a920-c7556cc15aaa --timeout 480
+orx logs e1126a83-08d5-4584-943c-8bb028bea9ca
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Claim 5 exact without-replacement certificate" --parent 4b7473e7-625c-4b5f-a920-c7556cc15aaa
+orx exp run 25e5e478-2172-40b8-91d3-5d65566deb50 --backend local
+orx exp wait 25e5e478-2172-40b8-91d3-5d65566deb50 --timeout 480
+orx logs 7c209bd3-e2e3-4242-bf78-66647277d855
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Claim 6 exact meta-learning counterexample" --parent 25e5e478-2172-40b8-91d3-5d65566deb50
+orx exp run c2e2bec8-05c1-49f4-8129-3907d6e14e88 --backend local
+orx exp wait c2e2bec8-05c1-49f4-8129-3907d6e14e88 --timeout 480
+orx logs 11ff7b12-f2dd-4ef2-bdfd-ea3641701954
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Evaluator-visible release candidate" --parent c2e2bec8-05c1-49f4-8129-3907d6e14e88
+orx exp run 7734d545-27ba-4a19-83ac-9bb9988f3ba8 --backend local
+orx exp wait 7734d545-27ba-4a19-83ac-9bb9988f3ba8 --timeout 480
+orx logs 44087f7f-7199-49e6-ab92-653d1a7c44b7 --bytes 30000
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Final evaluator-visible release audit" --parent 7734d545-27ba-4a19-83ac-9bb9988f3ba8
+orx exp run 8bfce8d7-9c8b-41a6-a1c0-4bc85a55748b --backend local
+orx exp wait 8bfce8d7-9c8b-41a6-a1c0-4bc85a55748b --timeout 480
+orx logs ceb74baa-d007-4cd7-b0f0-f154c09e2713 --bytes 12000
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Publication-ready release manifest" --parent 8bfce8d7-9c8b-41a6-a1c0-4bc85a55748b
+uv run --locked marimo check notebooks/stability_beyond_bounded.py
+uv run --locked python -m reproduction.release_audit
+
+The fixed command inherited by every experiment node is:
+uv run --locked python -m reproduction.run_all
+
+Read-only inspection, formatting, file-copy, and hash commands are preserved in
+the OpenResearch session transcript. Publication and post-publication commands
+are appended to this record before release.

@@ -1,0 +1,45 @@
+{
+  "source": {
+    "url": "https://ar5iv.labs.arxiv.org/html/2606.06855",
+    "anchor_theorem_3_9": "https://ar5iv.labs.arxiv.org/html/2606.06855#S3.Thmtheorem9",
+    "anchor_theorem_3_10": "https://ar5iv.labs.arxiv.org/html/2606.06855#S3.Thmtheorem10",
+    "retrieved_at_utc": "2026-07-24T15:36:25Z",
+    "sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7"
+  },
+  "theorem_3_10": {
+    "quantifier": "every y>0",
+    "displayed_reassignment_coefficient": "|1/u-1/m| beta' G",
+    "conclusion": "P(R(h)-Rhat(h)>=y+beta EH) <= c1 Vp'/y^p + exp(-c2 y^2/V2')"
+  },
+  "counterexample": {
+    "population": [
+      "z0=(x0,label 0)",
+      "z1=(x1,label 1)"
+    ],
+    "m": 1,
+    "u": 1,
+    "randomness": "uniform over the two possible train/test partitions",
+    "algorithm": "constant symmetric algorithm h(x)=0",
+    "loss": "squared loss",
+    "hypothesis_class": "singleton {h}",
+    "p": 2,
+    "beta": 1,
+    "H": "H(z,z')=0",
+    "beta_prime": 1,
+    "G": "G(z,z')=|label(z)-label(z')|",
+    "assumption_3_6": "loss of the returned hypothesis is unchanged by every swap, so 0<=beta H",
+    "assumption_3_8": "squared loss of h=0 equals the binary label, so its difference equals G; all moments are finite",
+    "gaps": [
+      1,
+      -1
+    ],
+    "y": "1/2",
+    "left_probability": "1/2",
+    "bias_shift": 0,
+    "Vp_prime": 0,
+    "V2_prime": 0,
+    "right_bound": 0
+  },
+  "contradiction": "1/2 > 0",
+  "cause": "Changing membership between test and train contributes (1/u+1/m) times a loss difference, not |1/u-1/m|."
+}

@@ -1,0 +1,10 @@
+Run 11ff7b12-f2dd-4ef2-bdfd-ea3641701954:
+status=COUNTEREXAMPLE_CONFIRMED
+meta_states=2
+population_states=4
+condition_i_checks=8
+condition_ii_checks=8
+condition_iii_checks=16
+gaps=["1/2","1/2"]
+left_probability=1
+right_bound=0

@@ -1,0 +1,6 @@
+Run 11ff7b12-f2dd-4ef2-bdfd-ea3641701954:
+whole_task_loss_change=1
+stated_H=0
+stated_H_covers_proof_neighbor=false
+corrected_task_level_H=1
+corrected_task_level_H_covers_proof_neighbor=true

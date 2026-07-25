@@ -1,0 +1,4 @@
+Expected beta-halving control: FAIL (lhs=1, rhs=1/2).
+Expected Cauchy finite-L2 control: FAIL (second moment diverges).
+The authoritative outputs are printed inline by the fixed OpenResearch run.
+

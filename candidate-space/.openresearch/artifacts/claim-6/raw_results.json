@@ -1,0 +1,30 @@
+{
+  "claim": 6,
+  "verdict": "FALSIFIED",
+  "confidence": "HIGH",
+  "falsified_object": "Theorem 3.14",
+  "complete_meta_training_states": 2,
+  "complete_population_task_states": 2,
+  "gaps": ["1/2", "1/2"],
+  "threshold_y": "1/4",
+  "left_probability": 1,
+  "right_bound": 0,
+  "independent_checker": {
+    "status": "COUNTEREXAMPLE_CONFIRMED",
+    "condition_i_checks": 8,
+    "condition_ii_checks": 8,
+    "condition_iii_checks": 16
+  },
+  "negative_control": {
+    "whole_task_loss_change": 1,
+    "stated_H_covers": false,
+    "corrected_task_level_H_covers": true
+  },
+  "fixed_command": "uv run --locked python -m reproduction.run_all",
+  "seed_policy": "No stochastic evidence; complete exact enumeration.",
+  "actual_cpu_allocation": "8 logical CPUs visible; numerical pools constrained to 1 active core",
+  "backend": "local",
+  "orchestrated_runtime": "approximately 10 seconds",
+  "run_id": "11ff7b12-f2dd-4ef2-bdfd-ea3641701954",
+  "git_sha": "7012a238962fd3e18a1f2f67a4f78ebbf69fc7c1"
+}

@@ -1,0 +1,17 @@
+{
+  "candidate_assembly": "exact judged revision overlaid additively with candidate text files",
+  "historical_archive_text_files_compared": 8,
+  "historical_archive_text_files_identical": 8,
+  "historical_evidence_pages_compared": 5,
+  "historical_evidence_pages_identical": 5,
+  "judged_revision": "05fc578dd7ceabe63f2650b21e8f318878f6b1ad",
+  "old_file_count": 17,
+  "old_files_missing_from_assembled_candidate": 0,
+  "old_path_subset": true,
+  "overlaid_entrypoints": [
+    "README.md",
+    "logbook.json",
+    "pages/index.md"
+  ],
+  "preservation_note": "All old paths remain present. The five old evidence pages remain byte-identical at their original paths. The superseded README, logbook, and index are also preserved byte-identically in historical/judged-05fc578dd7ceabe63f2650b21e8f318878f6b1ad/."
+}

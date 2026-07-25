@@ -1,0 +1,7 @@
+Claim,Canonical page,Code visible,Data inline,Raw link,Checker,Control,Exact claim tested,Reviewer verdict
+1,pages/current-claim-1/page.md,Yes,Yes,Yes,Independent,Gaussian-only mutation fails,Yes,VERIFIED
+2,pages/current-claim-2/page.md,Yes,Yes,Yes,Independent,Displayed proof-step control fails,Yes,BLOCKED
+3,pages/current-claim-3/page.md,Yes,Yes,Yes,Independent,Halved-beta and Cauchy controls fail,Yes,VERIFIED
+4,pages/current-claim-4/page.md,Yes,Yes,Yes,Independent,Two derivation mutations fail,Yes,VERIFIED
+5,pages/current-claim-5/page.md,Yes,Yes,Yes,Independent,Corrected coefficient passes,Yes,FALSIFIED
+6,pages/current-claim-6/page.md,Yes,Yes,Yes,Independent,Whole-task premise control fails,Yes,FALSIFIED

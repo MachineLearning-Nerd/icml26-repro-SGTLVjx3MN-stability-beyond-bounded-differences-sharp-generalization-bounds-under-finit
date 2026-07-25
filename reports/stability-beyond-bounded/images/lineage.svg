@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" rx="28" fill="#f1f5f9"/>
+  <text x="64" y="66" fill="#0f172a" font-family="Arial,sans-serif" font-size="31" font-weight="700">Cumulative experiment lineage</text>
+  <line x1="105" y1="225" x2="1090" y2="225" stroke="#94a3b8" stroke-width="8"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <circle cx="110" cy="225" r="31" fill="#64748b"/>
+    <text x="110" y="291" fill="#334155" font-size="16">Frozen baseline</text>
+    <text x="110" y="316" fill="#64748b" font-size="14">TOY only</text>
+    <circle cx="285" cy="225" r="31" fill="#16a34a"/>
+    <text x="285" y="291" fill="#334155" font-size="16">Claims 3 → 1</text>
+    <text x="285" y="316" fill="#16a34a" font-size="14">local · ~10s each</text>
+    <circle cx="460" cy="225" r="31" fill="#d97706"/>
+    <text x="460" y="291" fill="#334155" font-size="16">Claim 2</text>
+    <text x="460" y="316" fill="#d97706" font-size="14">HF CPU · 26s</text>
+    <circle cx="635" cy="225" r="31" fill="#16a34a"/>
+    <text x="635" y="291" fill="#334155" font-size="16">Claim 4</text>
+    <text x="635" y="316" fill="#16a34a" font-size="14">local · ~10s</text>
+    <circle cx="810" cy="225" r="31" fill="#dc2626"/>
+    <text x="810" y="291" fill="#334155" font-size="16">Claim 5</text>
+    <text x="810" y="316" fill="#dc2626" font-size="14">exact falsification</text>
+    <circle cx="985" cy="225" r="31" fill="#dc2626"/>
+    <text x="985" y="291" fill="#334155" font-size="16">Claim 6</text>
+    <text x="985" y="316" fill="#dc2626" font-size="14">exact falsification</text>
+  </g>
+  <rect x="64" y="382" width="1072" height="64" rx="14" fill="#e2e8f0"/>
+  <text x="600" y="422" text-anchor="middle" fill="#334155" font-family="Arial,sans-serif" font-size="21">One fixed command · one locked environment · one active CPU core · no GPU</text>
+</svg>

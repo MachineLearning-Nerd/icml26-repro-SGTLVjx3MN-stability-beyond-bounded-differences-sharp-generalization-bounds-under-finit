@@ -1,0 +1,41 @@
+{
+  "source": {
+    "paper_sha256": "ca7631580c8a96ff440892fe1ab8d8b42edc84f0dc6eaaf990d404c75f47c7c7",
+    "anchor": "S3.Thmtheorem1"
+  },
+  "witness": {
+    "sample_size": 20,
+    "distribution": "standard_normal",
+    "algorithm": "sample_mean",
+    "loss": "abs(sample_mean)",
+    "beta": "1/20",
+    "envelope": "abs(z-z_prime)"
+  },
+  "moments": {
+    "p": 2,
+    "distribution_of_difference": "normal(mean=0, variance=2)",
+    "E_H_squared": 2,
+    "finite": true
+  },
+  "uniform_stability": {
+    "witness_family": "z_i=m*(B+1), z_i_prime=0",
+    "loss_increment": "B+1",
+    "quantifier": "for every finite B>=0",
+    "supremum_is_infinite": true
+  },
+  "independent_checker": {
+    "status": "PASS",
+    "exact_arithmetic_cases": 49
+  },
+  "negative_controls": {
+    "halved_beta": "FAIL as intended: 1>1/2",
+    "cauchy_p2": "FAIL as intended: second moment is infinite"
+  },
+  "fixed_command": "uv run --locked python -m reproduction.run_all",
+  "actual_cpu_allocation": "8 logical CPUs visible; numerical pools constrained to 1 active core",
+  "backend": "local",
+  "orchestrated_runtime": "approximately 10 seconds",
+  "run_id": "b2b1a8ee-273a-4152-8a68-e14a454fbcc7",
+  "git_sha": "53ce47990a736bbaa7cd7d01989214beda9ce13a",
+  "verdict": "VERIFIED"
+}

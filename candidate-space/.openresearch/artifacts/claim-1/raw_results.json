@@ -1,0 +1,26 @@
+{
+  "claim": 1,
+  "verdict": "VERIFIED",
+  "confidence": "HIGH",
+  "primary_result": "Universal symbolic derivation complete.",
+  "constant_identity": "alpha=2/(p+2) gives alpha^2/(8e^p)=c2",
+  "constant_domination": "A^p+2A^(p-1)+2A^p <= 4A^p=c1 for A=4(p+2)/p and p>=2",
+  "independent_checker": {
+    "status": "PASS",
+    "functions_checked": 106,
+    "tail_thresholds_checked": 1854
+  },
+  "negative_control": {
+    "mutation": "delete polynomial term",
+    "actual_tail": 1e-08,
+    "mutated_gaussian_bound": 0,
+    "mutated_bound_holds": false
+  },
+  "fixed_command": "uv run --locked python -m reproduction.run_all",
+  "seed_policy": "Primary proof deterministic; finite diagnostic exhaustive.",
+  "actual_cpu_allocation": "8 logical CPUs visible; numerical pools constrained to 1 active core",
+  "backend": "local",
+  "orchestrated_runtime": "approximately 10 seconds",
+  "run_id": "b1931020-333d-491b-9e08-2568893659a4",
+  "git_sha": "b1cd30ca708bc532460da6fc62af0e13d5bad8bf"
+}

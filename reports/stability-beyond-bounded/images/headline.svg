@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" rx="28" fill="#0b1220"/>
+  <text x="64" y="76" fill="#f8fafc" font-family="Arial,sans-serif" font-size="34" font-weight="700">Six exact claim contracts</text>
+  <text x="64" y="116" fill="#94a3b8" font-family="Arial,sans-serif" font-size="20">Three verified · two falsified · one honestly blocked</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="64" y="164" width="164" height="170" rx="18" fill="#123c32"/>
+    <text x="146" y="212" text-anchor="middle" fill="#86efac" font-size="20" font-weight="700">CLAIM 1</text>
+    <text x="146" y="260" text-anchor="middle" fill="#f8fafc" font-size="24">VERIFIED</text>
+    <text x="146" y="302" text-anchor="middle" fill="#a7f3d0" font-size="16">Theorem 2.2</text>
+    <rect x="246" y="164" width="164" height="170" rx="18" fill="#3b2f12"/>
+    <text x="328" y="212" text-anchor="middle" fill="#fde68a" font-size="20" font-weight="700">CLAIM 2</text>
+    <text x="328" y="260" text-anchor="middle" fill="#f8fafc" font-size="24">BLOCKED</text>
+    <text x="328" y="302" text-anchor="middle" fill="#fde68a" font-size="16">4 routes complete</text>
+    <rect x="428" y="164" width="164" height="170" rx="18" fill="#123c32"/>
+    <text x="510" y="212" text-anchor="middle" fill="#86efac" font-size="20" font-weight="700">CLAIM 3</text>
+    <text x="510" y="260" text-anchor="middle" fill="#f8fafc" font-size="24">VERIFIED</text>
+    <text x="510" y="302" text-anchor="middle" fill="#a7f3d0" font-size="16">Strict extension</text>
+    <rect x="610" y="164" width="164" height="170" rx="18" fill="#123c32"/>
+    <text x="692" y="212" text-anchor="middle" fill="#86efac" font-size="20" font-weight="700">CLAIM 4</text>
+    <text x="692" y="260" text-anchor="middle" fill="#f8fafc" font-size="24">VERIFIED</text>
+    <text x="692" y="302" text-anchor="middle" fill="#a7f3d0" font-size="16">Theorem 3.4</text>
+    <rect x="792" y="164" width="164" height="170" rx="18" fill="#4a1d2b"/>
+    <text x="874" y="212" text-anchor="middle" fill="#fda4af" font-size="20" font-weight="700">CLAIM 5</text>
+    <text x="874" y="260" text-anchor="middle" fill="#f8fafc" font-size="24">FALSIFIED</text>
+    <text x="874" y="302" text-anchor="middle" fill="#fecdd3" font-size="16">1/2 ≤ 0</text>
+    <rect x="974" y="164" width="164" height="170" rx="18" fill="#4a1d2b"/>
+    <text x="1056" y="212" text-anchor="middle" fill="#fda4af" font-size="20" font-weight="700">CLAIM 6</text>
+    <text x="1056" y="260" text-anchor="middle" fill="#f8fafc" font-size="24">FALSIFIED</text>
+    <text x="1056" y="302" text-anchor="middle" fill="#fecdd3" font-size="16">1 ≤ 0</text>
+  </g>
+  <rect x="64" y="382" width="1074" height="78" rx="16" fill="#172033"/>
+  <text x="90" y="416" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="18">Forecast after preserved 6/12 baseline:</text>
+  <text x="90" y="446" fill="#f8fafc" font-family="Arial,sans-serif" font-size="22" font-weight="700">8–11 / 12 conservative · 11 / 12 best-supported possible · not a judge result</text>
+</svg>

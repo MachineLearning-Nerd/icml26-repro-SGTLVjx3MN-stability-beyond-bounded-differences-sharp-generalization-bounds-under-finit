@@ -1,0 +1,14 @@
+{
+  "claim_id": 1,
+  "paper_object": "Theorem 2.2",
+  "exact_quantifiers": "For every n>=1, every independent product distribution, every measurable f and valid finite-Lp replace-one envelopes with p>=2, and every z>0.",
+  "acceptance": [
+    "reconstruct every proof dependency without Monte Carlo",
+    "recover displayed c1 and c2 for the full real domain p>=2",
+    "independent checker exits zero",
+    "a Gaussian-only mutation fails on a one-large-jump distribution",
+    "limitations distinguish universal derivation from finite diagnostics"
+  ],
+  "verdict": "VERIFIED"
+}
+

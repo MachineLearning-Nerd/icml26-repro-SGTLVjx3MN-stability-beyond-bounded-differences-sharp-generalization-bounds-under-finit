@@ -1,0 +1,36 @@
+{
+  "claim": 2,
+  "verdict": "BLOCKED",
+  "confidence": "LOW",
+  "route_1": {
+    "result": "proof step invalid",
+    "equation_61_projection_tail": "1",
+    "equation_61_envelope_tail": "12/25",
+    "interpretation": "not a theorem counterexample"
+  },
+  "route_2": {
+    "result": "corroborated on complete declared finite grid",
+    "functions": 106,
+    "comparisons": 81024,
+    "violations": 0,
+    "minimum_bound_to_tail_ratio": 27.272779898979874
+  },
+  "route_3": {
+    "result": "weaker universal polynomial bound only",
+    "limitation": "does not recover the exact Q-dependent theorem"
+  },
+  "route_4": {
+    "result": "no valid theorem counterexample found",
+    "seed": 260606855,
+    "trials": 20000,
+    "assumption_violations": 0,
+    "valid_counterexamples": 0,
+    "minimum_bound_to_tail_ratio": 1.9578038271661302
+  },
+  "fixed_command": "uv run --locked python -m reproduction.run_all",
+  "actual_cpu_allocation": "Hugging Face cpu-upgrade exposed 64 logical CPUs; numerical pools constrained to 1 active core",
+  "backend": "hf cpu-upgrade",
+  "orchestrated_runtime": "26 seconds",
+  "run_id": "6c03caa7-60b1-4f58-a784-6e38aafc3fa9",
+  "git_sha": "beaea6c9adf737c0df8045fd271b73e4fea1dfe0"
+}
