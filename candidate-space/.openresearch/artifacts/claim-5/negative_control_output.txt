@@ -1,0 +1,6 @@
+Run 7c209bd3-e2e3-4242-bf78-66647277d855:
+actual_swap_gap_change=2
+paper_envelope=0
+paper_increment_holds=false
+corrected_envelope=2
+corrected_increment_holds=true

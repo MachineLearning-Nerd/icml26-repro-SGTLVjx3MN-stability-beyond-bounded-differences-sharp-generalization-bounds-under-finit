@@ -42,6 +42,10 @@ orx exp run c2e2bec8-05c1-49f4-8129-3907d6e14e88 --backend local
 orx exp wait c2e2bec8-05c1-49f4-8129-3907d6e14e88 --timeout 480
 orx logs 11ff7b12-f2dd-4ef2-bdfd-ea3641701954
 orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Evaluator-visible release candidate" --parent c2e2bec8-05c1-49f4-8129-3907d6e14e88
+orx exp run 7734d545-27ba-4a19-83ac-9bb9988f3ba8 --backend local
+orx exp wait 7734d545-27ba-4a19-83ac-9bb9988f3ba8 --timeout 480
+orx logs 44087f7f-7199-49e6-ab92-653d1a7c44b7 --bytes 30000
+orx create-experiment 91d810d8-b1b0-4a16-bddf-9a3aa4703e8c --title "Final evaluator-visible release audit" --parent 7734d545-27ba-4a19-83ac-9bb9988f3ba8
 uv run --locked marimo check notebooks/stability_beyond_bounded.py
 uv run --locked python -m reproduction.release_audit
 

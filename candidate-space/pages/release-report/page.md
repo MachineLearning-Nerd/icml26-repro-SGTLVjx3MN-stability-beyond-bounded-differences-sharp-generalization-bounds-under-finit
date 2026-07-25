@@ -48,9 +48,14 @@ rather than guessed.
 ## Experiment tree
 
 `Historical rejected baseline → Claim 3 → Claim 1 → Claim 2 → Claim 4 →
-Claim 5 → Claim 6 → evaluator-visible release candidate`.
+Claim 5 → Claim 6 → evaluator-visible release candidate → final
+evaluator-visible release audit`.
 
-The current candidate branch is `orx/evaluator-visible-release-candidate`.
+The first release candidate passed every claim check but correctly stopped
+when its audit detected that Git ignore rules had omitted the hidden evidence
+mirror. The current candidate branch is
+`orx/final-evaluator-visible-release-audit`; it force-includes that mirror and
+reruns the identical fixed command.
 The winning scientific branch is
 `orx/claim-6-exact-meta-learning-counterexample` at Git SHA
 `7012a238962fd3e18a1f2f67a4f78ebbf69fc7c1`. The exact release branch SHA

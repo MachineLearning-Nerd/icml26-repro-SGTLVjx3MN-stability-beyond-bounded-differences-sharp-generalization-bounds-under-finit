@@ -1,0 +1,16 @@
+{
+  "claim_id": 5,
+  "paper_objects": [
+    "Theorem 3.9",
+    "Theorem 3.10"
+  ],
+  "exact_quantifiers": "Theorem 3.9 is universal over finite N=m+u populations, symmetric measurable functions satisfying its finite-Lp swap envelope, p>=2, and y>0. Theorem 3.10 is universal over symmetric transductive algorithms and Lp-bounded hypothesis classes satisfying Assumptions 3.6 and 3.8, and every y>0.",
+  "acceptance": [
+    "audit the exact without-replacement Doob coefficients and displayed Vp,V2",
+    "test the exact Theorem 3.10 reassignment coefficient, not a variance proxy",
+    "a falsification must enumerate the complete finite population and satisfy every stated assumption",
+    "independent checker exits zero",
+    "the corrected reassignment coefficient must pass where the displayed coefficient fails"
+  ],
+  "verdict": "FALSIFIED"
+}
