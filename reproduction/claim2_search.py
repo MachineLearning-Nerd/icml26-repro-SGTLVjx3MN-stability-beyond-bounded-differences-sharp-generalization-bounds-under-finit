@@ -195,4 +195,3 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         raise SystemExit("usage: python -m reproduction.claim2_search CLAIM_CONTRACT")
     print(json.dumps(run(Path(sys.argv[1])), indent=2, sort_keys=True))
-

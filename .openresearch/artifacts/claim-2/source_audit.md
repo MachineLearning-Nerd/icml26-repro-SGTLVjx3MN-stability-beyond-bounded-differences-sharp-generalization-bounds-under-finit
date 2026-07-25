@@ -21,4 +21,3 @@ The primary comparison source arXiv:2512.10012 develops modern martingale
 Fuk–Nagaev inequalities, but its heavy-tailed McDiarmid corollary assumes a
 higher conditional moment `q>2`; it therefore does not independently certify
 the exact lower-moment `1<p<2`, all-`Q` statement here.
-

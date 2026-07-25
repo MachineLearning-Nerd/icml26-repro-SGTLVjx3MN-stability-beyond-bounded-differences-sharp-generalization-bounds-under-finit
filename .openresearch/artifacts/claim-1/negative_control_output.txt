@@ -1,3 +1,2 @@
 Expected: deleting the polynomial term FAILS on the committed rare-Bernoulli
 one-large-jump witness. The fixed run prints the actual tail and mutated bound.
-

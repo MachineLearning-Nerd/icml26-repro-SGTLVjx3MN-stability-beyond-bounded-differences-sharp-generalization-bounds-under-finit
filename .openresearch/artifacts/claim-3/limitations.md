@@ -8,4 +8,3 @@
 - The verifier is a purpose-built certificate checker, not a proof-assistant
   kernel. The derivation is short enough to audit line by line and is checked
   again by an independent implementation.
-

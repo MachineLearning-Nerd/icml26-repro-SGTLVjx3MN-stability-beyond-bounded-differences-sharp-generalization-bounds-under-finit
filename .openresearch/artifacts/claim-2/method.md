@@ -14,4 +14,3 @@
 No failed proof step or absence of a counterexample is mislabeled as
 falsification. If route 4 finds no valid contradiction and route 1 remains
 unrepaired, the honest verdict is `BLOCKED`.
-

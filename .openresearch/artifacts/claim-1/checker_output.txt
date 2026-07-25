@@ -1,3 +1,2 @@
 Expected: independent checker PASS with exact function and threshold counts.
 The authoritative counts and exit code are printed by the fixed run.
-

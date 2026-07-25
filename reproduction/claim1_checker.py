@@ -96,4 +96,3 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         raise SystemExit("usage: python -m reproduction.claim1_checker PROOF_CERTIFICATE")
     print(json.dumps(independent_check(Path(sys.argv[1])), indent=2, sort_keys=True))
-

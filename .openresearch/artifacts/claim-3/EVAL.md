@@ -8,4 +8,3 @@ strict extension rather than merely observing a finite sample moment.
 
 Release readiness remains conditional on the fixed OpenResearch run, its
 independent-checker output, and evaluator-visible mirroring.
-

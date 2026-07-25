@@ -32,4 +32,3 @@ The literature search also returned arXiv:2512.10012, a primary work on
 Fuk–Nagaev inequalities for heavy-tailed martingales. It independently
 confirms that Gaussian-plus-large-jump structure is the relevant classical
 phenomenon; it is context, not a premise substituted for the paper's proof.
-

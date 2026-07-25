@@ -14,4 +14,3 @@
   "routes_required": 4,
   "acceptance": "VERIFIED only with an exact universal derivation; FALSIFIED only with an assumption-satisfying theorem counterexample; otherwise BLOCKED"
 }
-

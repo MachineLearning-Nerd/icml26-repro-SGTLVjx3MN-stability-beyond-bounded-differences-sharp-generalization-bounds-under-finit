@@ -8,4 +8,3 @@
 - This verifies the inequality and two-regime form. It does not independently
   prove the paper's broader informal discussion of minimax optimality; the paper
   itself defines “sharp” only in tail-order terms.
-

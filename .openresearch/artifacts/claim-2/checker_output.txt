@@ -1,3 +1,2 @@
 The independent finite-grid and randomized-search output is printed inline by
 the fixed OpenResearch run. It must exit zero and report all assumptions valid.
-

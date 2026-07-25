@@ -14,4 +14,3 @@ Two controls must fail:
 
 The verifier raises or exits nonzero if the positive certificate fails, if the
 independent checker fails, or if either negative control unexpectedly passes.
-

@@ -7,4 +7,3 @@
 - A weaker polynomial bound can be reconstructed, but accepting it would
   replace the paper's claim with a proxy.
 - Unless a valid counterexample is found, the proof gap is not falsification.
-

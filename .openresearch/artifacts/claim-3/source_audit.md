@@ -31,4 +31,3 @@ For iid standard normals, `Z-Z'~N(0,2)`, hence `E H^2=2<infinity`.
 Conversely, for every proposed finite uniform bound `B`, choose one changed
 coordinate as `z_i=m(B+1)` and `z_i'=0`, with all others zero. The loss
 increment is `B+1>B`; therefore its deterministic supremum is infinite.
-

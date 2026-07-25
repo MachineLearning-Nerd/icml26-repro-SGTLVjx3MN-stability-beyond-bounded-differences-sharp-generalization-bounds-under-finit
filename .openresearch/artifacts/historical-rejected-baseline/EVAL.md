@@ -10,4 +10,3 @@ current verification and it is not accepted as full-credit evidence.
 
 The current verifier will be developed only on child experiments. Every child
 must rerun this historical regression and clearly supersede it.
-
