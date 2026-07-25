@@ -13,7 +13,10 @@
   "negative_controls": "PASS",
   "post_fix_blind_review": "PASS",
   "publication_status": "READY_FOR_CUMULATIVE_RUN",
-  "raw_data_regenerates_from_fixed_command": "PASS_ON_RUN_44087f7f-7199-49e6-ab92-653d1a7c44b7",
+  "raw_data_regenerates_from_fixed_command": "PASS_ON_RUN_ceb74baa-d007-4cd7-b0f0-f154c09e2713",
+  "winning_git_sha": "09b7046a1fe2ecde1d10d6e013df3bbe8ebd59da",
+  "winning_run": "ceb74baa-d007-4cd7-b0f0-f154c09e2713",
+  "winning_run_duration_seconds": 15,
   "secret_scan": "PASS",
   "text_upload_allowlist": "PASS"
 }

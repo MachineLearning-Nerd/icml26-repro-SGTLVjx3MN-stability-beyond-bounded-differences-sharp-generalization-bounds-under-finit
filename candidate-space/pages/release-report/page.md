@@ -17,6 +17,13 @@ Current total score remains **6/12** until the live judge evaluates a new
 revision. The conservative projected total is **8–11/12**; the
 best-supported possible total is **11/12**.
 
+The protected Hugging Face Head and Judge Head are both
+`05fc578dd7ceabe63f2650b21e8f318878f6b1ad`. The winning cumulative
+release-audit branch is `orx/final-evaluator-visible-release-audit` at
+`09b7046a1fe2ecde1d10d6e013df3bbe8ebd59da`; run
+`ceb74baa-d007-4cd7-b0f0-f154c09e2713` completed in 15 seconds with every
+claim and release gate passing.
+
 All six claim assessments changed from the previous judge's TOY description:
 Claims 1, 3, and 4 now have exact VERIFIED certificates; Claims 5 and 6 have
 exact FALSIFIED certificates; Claim 2 is explicitly BLOCKED. Claim 2 remains
@@ -53,9 +60,10 @@ evaluator-visible release audit`.
 
 The first release candidate passed every claim check but correctly stopped
 when its audit detected that Git ignore rules had omitted the hidden evidence
-mirror. The current candidate branch is
-`orx/final-evaluator-visible-release-audit`; it force-includes that mirror and
-reruns the identical fixed command.
+mirror. The winning release-audit child force-includes that mirror and reran
+the identical fixed command successfully. The current
+`orx/publication-ready-release-manifest` child adds this immutable provenance
+and changes no claim logic.
 The winning scientific branch is
 `orx/claim-6-exact-meta-learning-counterexample` at Git SHA
 `7012a238962fd3e18a1f2f67a4f78ebbf69fc7c1`. The exact release branch SHA
@@ -70,4 +78,7 @@ the published Space revision.
 [Machine-readable visibility matrix](../../evidence/release/visibility-matrix.csv) ·
 [Old/new subset proof](../../evidence/release/old-new-subset.json) ·
 [Secret scan](../../evidence/release/secret-scan.txt) ·
-[Release gates](../../evidence/release/release-gates.json)
+[Release gates](../../evidence/release/release-gates.json) ·
+[Exact upload allowlist](../../evidence/release/text-upload-allowlist.txt) ·
+[Candidate SHA-256 manifest](../../evidence/release/candidate-manifest.sha256) ·
+[Commands executed](../../evidence/release/commands-executed.txt)
